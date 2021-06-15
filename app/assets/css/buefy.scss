@@ -1,0 +1,140 @@
+// fonts
+$family-sans-serif: "M PLUS Rounded 1c", "Kosugi Maru", "Noto Sans JP",
+  BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+  "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial",
+  sans-serif;
+
+// Import Bulma's core
+@import "~bulma/sass/utilities/_all";
+@import "~assets/css/colors";
+
+// Setup $colors to use as bulma classes (e.g. 'is-twitter')
+$custom-colors: (
+  "secondary": (
+    $secondary,
+    $secondary-invert,
+    $secondary-light,
+    $secondary-dark
+  ),
+  "accent": (
+    $accent,
+    $accent-invert,
+    $accent-light,
+    $accent-dark
+  ),
+  "twitter": (
+    $twitter,
+    $twitter-invert
+  ),
+  "facebook": (
+    $facebook,
+    $facebook-invert
+  ),
+  "line": (
+    $line,
+    $line-invert
+  ),
+  "pocket": (
+    $pocket,
+    $pocket-invert
+  ),
+  "hatebu": (
+    $hatebu,
+    $hatebu-invert
+  ),
+  "grey": (
+    $grey,
+    $grey-invert
+  )
+);
+
+$colors: mergeColorMaps(
+  (
+    "white": (
+      $white,
+      $black
+    ),
+    "black": (
+      $black,
+      $white
+    ),
+    "light": (
+      $light,
+      $light-invert
+    ),
+    "dark": (
+      $dark,
+      $dark-invert
+    ),
+    "primary": (
+      $primary,
+      $primary-invert,
+      $primary-light,
+      $primary-dark
+    ),
+    "link": (
+      $link,
+      $link-invert,
+      $link-light,
+      $link-dark
+    ),
+    "info": (
+      $info,
+      $info-invert,
+      $info-light,
+      $info-dark
+    ),
+    "success": (
+      $success,
+      $success-invert,
+      $success-light,
+      $success-dark
+    ),
+    "warning": (
+      $warning,
+      $warning-invert,
+      $warning-light,
+      $warning-dark
+    ),
+    "danger": (
+      $danger,
+      $danger-invert,
+      $danger-light,
+      $danger-dark
+    )
+  ),
+  $custom-colors
+);
+
+// text
+$text: $text-color;
+$text-invert: findColorInvert($text);
+$title-color: $text;
+$panel-block-color: $text;
+
+// Links
+$link: $primary;
+$link-invert: $primary-invert;
+$link-focus-border: $primary;
+
+// Fottoer
+$footer-background-color: $primary;
+
+// Import Bulma and Buefy styles
+@import "~bulma";
+@import "~buefy/src/scss/buefy";
+
+.page-title {
+  font-size: 1.2rem;
+  text-align: center;
+  border-bottom: 1px dotted currentColor;
+  margin-bottom: 1rem;
+}
+
+.page-subtitle {
+  font-size: 1rem;
+  text-align: left;
+  border-bottom: 1px dotted currentColor;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}

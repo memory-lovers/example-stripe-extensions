@@ -1,0 +1,29 @@
+{
+  "name": "example-stripe-extensions",
+  "version": "1.0.0",
+  "description": "Example For Run Subscription Payments with Stripe in Firebase Extensions",
+  "author": "Memory Lovers, LLC.",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@stripe/stripe-js": "^1.15.0",
+    "firebase": "^8.6.5",
+    "nuxt": "^2.15.6",
+    "nuxt-buefy": "^0.4.7",
+    "nuxt-property-decorator": "^2.9.1"
+  },
+  "devDependencies": {
+    "@nuxt/types": "^2.15.6",
+    "@nuxt/typescript-build": "^2.1.0",
+    "@nuxtjs/style-resources": "^1.1.0",
+    "node-sass": "^5.0.0",
+    "sass-loader": "^10.1.0",
+    "stripe": "^8.154.0",
+    "vuex-module-decorators": "^1.0.1"
+  }
+}
